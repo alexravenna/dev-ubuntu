@@ -23,7 +23,4 @@
   command: "asdf plugin-add {{ item }}"
   when: "item|string not in asdf_plugins.stdout_lines"
   with_items:
-    - erlang
-    - elixir
-    - ruby
     - nodejs
